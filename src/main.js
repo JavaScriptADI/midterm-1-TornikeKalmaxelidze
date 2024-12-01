@@ -2273,8 +2273,8 @@ function findArrayLengths(arr28, arr29) {
 const array8 = [1, 2, 3, 4];
 const array9 = ['a', 'b', 'c', 'd', 'e'];
 
-console.log(`Array 1 length: ${result.array8}`);
-console.log(`Array 2 length: ${result.array9}`);
+console.log(`Array 1 length: ${array8}`);
+console.log(`Array 2 length: ${array9}`);
 
 
 // 142
