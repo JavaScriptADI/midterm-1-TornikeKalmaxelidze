@@ -355,11 +355,11 @@ console.log(isInRange(55, 120));
 
 
 // task 29 
-function isInRange(num1, num2, num3) {
+function isInRange29(num1, num2, num3) {
     return (num1 >= 50 && num1 <= 99) || (num2 >= 50 && num2 <= 99) || (num3 >= 50 && num3 <= 99);
 }
 
-console.log(isInRange(55, 120, 45));
+console.log(isInRange29(55, 120, 45));
 
 
 // task 30 
@@ -420,9 +420,6 @@ function checkRanges(num5, num6) {
     }
 }
 
-const num5 = 45;
-const num6 = 85;
-
 console.log(checkRanges(num1, num2));
 
 //   34 
@@ -433,9 +430,6 @@ function findLargestInRange(num7, num8) {
         return "Both numbers must be between 40 and 60 inclusive.";
     }
 }
-
-const num7 = 45;
-const num8 = 60;
 
 console.log("The largest number is:", findLargestInRange(num1, num2));
 
@@ -454,11 +448,9 @@ function checkCharacterInRange(str, char) {
         return `The character '${char}' does not exist between the 2nd and 4th positions.`;
     }
 }
-
-const innputString = "abcdef";
 const character = "c";
 
-console.log(checkCharacterInRange(inputString, character));
+console.log(checkCharacterInRange(character));
 
 // 36
 function checkLastDigit(num10, num11, num12) {
@@ -488,8 +480,8 @@ function modifyString(str) {
     }
 }
 
-const inputedString = "HelloWorld";
-console.log(modifyString(inputString));
+const inputedString1 = "HelloWorld";
+console.log(modifyString(inputedString1));
 
 const shortString = "Hi";
 console.log(modifyString(shortString));
@@ -724,7 +716,7 @@ function checkABSeparation(str) {
         if ((str[i] === 'a' && str[i + 4] === 'b') || (str[i] === 'b' && str[i + 4] === 'a')) {
             return true;
         }
-    }
+    };
     return false;
 }
 console.log(checkABSeparation("axyzab"));
@@ -908,8 +900,8 @@ function displayCityName(city) {
     }
 }
 
-console.log(displayCityName("Kakheti")); 
-console.log(displayCityName("sighnaghi")); 
+console.log(displayCityName("Kakheti"));
+console.log(displayCityName("sighnaghi"));
 
 
 // 67
@@ -991,7 +983,6 @@ function firstandlast(arr) {
         return "arry aris swori da 3 element"
     }
 }
-
 console.log(firstandlast([1, 2, 1]));
 
 // 73
@@ -1002,35 +993,33 @@ function integratsarry(arr) {
     } else {
         return "zustad toli aris 3 elementis"
     }
-}
+};
 console.log(integratsarry([1, 2, 3]));
 
 // 74
 function firstandlastelementvalue(arr) {
     if (arr.length > 0) {
         let largest = Math.max(arr[0], arr[arr.length - 1]);
-        for (let i = 0; i < arr.length; i++)
-            arr[i] = largest
+        for (let i = 0; i < arr.length; i++);
+        arr[i] = largest
         return arr
     } else {
         return "Array must contain at least one element.";
     }
-
 }
 console.log(firstandlastelementvalue([20, 25, 30]));
 
 // 75
 function firstandlastelementsequal(arr) {
     if (arr.length >= 1) {
-       
         return [arr[0], arr[arr.length - 1]];
-    }else {
+    } else {
         return " rac shen gidna is damiwere"
     }
 
-    }
-    console.log(firstandlastelementsequal([1, 2, 3]));
-    console.log(firstandlastelementsequal([5, 10, 15])); 
+}
+console.log(firstandlastelementsequal([1, 2, 3]));
+console.log(firstandlastelementsequal([5, 10, 15]));
 
 // 76
 // rahhac ameria
@@ -1047,15 +1036,14 @@ function containsOneOrThree(arr) {
         return "Array must contain exactly 2 elements.";
     }
 }
-console.log(containsOneOrThree([1, 2])); 
-console.log(containsOneOrThree([5, 3]));   
+console.log(containsOneOrThree([1, 2]));
+console.log(containsOneOrThree([5, 3]));
 
 
 // 78
 
 function doesNotContainOneOrThree(arr) {
     if (arr.length === 2) {
-     
         if (!arr.includes(1) && !arr.includes(3)) {
             return true;
         } else {
@@ -1068,18 +1056,13 @@ function doesNotContainOneOrThree(arr) {
 
 
 console.log(doesNotContainOneOrThree([2, 6]));
-console.log(doesNotContainOneOrThree([7]));    
+console.log(doesNotContainOneOrThree([7]));
 
 // 79
-
 function contains30And40Twice(arr) {
-   
     if (arr.length === 0 || arr.length === 1 || arr.length === 2) {
-      
         const count30 = arr.filter(num => num === 30).length;
         const count40 = arr.filter(num => num === 40).length;
-
-     
         if (count30 === 2 && count40 === 2) {
             return true;
         } else {
@@ -1089,10 +1072,9 @@ function contains30And40Twice(arr) {
         return "Array length must be 0, 1, or 2.";
     }
 }
-
-console.log(contains30And40Twice([30, 30, 40, 40])); 
-console.log(contains30And40Twice([30, 30]));     
-console.log(contains30And40Twice([40, 40]));       
+console.log(contains30And40Twice([30, 30, 40, 40]));
+console.log(contains30And40Twice([30, 30]));
+console.log(contains30And40Twice([40, 40]));
 
 
 // 80
@@ -1111,18 +1093,18 @@ function swapFirstAndLast(arr) {
         return "Array must contain at least 1 element.";
     }
 }
-console.log(swapFirstAndLast([6, 2, 7])); 
-console.log(swapFirstAndLast([5, 10, 15])); 
+console.log(swapFirstAndLast([6, 2, 7]));
+console.log(swapFirstAndLast([5, 10, 15]));
 
 // 81
 function addTwoDigits(num) {
 
     if (num >= 10 && num <= 99) {
-        
-        const tens = Math.floor(num / 10);
-        const ones = num % 10;   
 
-       
+        const tens = Math.floor(num / 10);
+        const ones = num % 10;
+
+
         const result = (tens + 2) * 10 + (ones + 2);
 
         return result;
@@ -1130,8 +1112,8 @@ function addTwoDigits(num) {
         return "Please enter a positive integer with exactly two digits.";
     }
 }
-console.log(addTwoDigits(34));  
-console.log(addTwoDigits(150)); 
+console.log(addTwoDigits(34));
+console.log(addTwoDigits(150));
 
 
 // 82
@@ -1161,8 +1143,8 @@ function addWithoutCarrying(a, b) {
 }
 
 
-console.log(addWithoutCarrying(123, 456)); 
-console.log(addWithoutCarrying(12, 89));  
+console.log(addWithoutCarrying(123, 456));
+console.log(addWithoutCarrying(12, 89));
 
 
 // 83
@@ -1182,194 +1164,192 @@ function findLongestString(arr) {
     return longest;
 }
 
-console.log(findLongestString(["gamarjoba", "luka", "zura", "gamaindustriconalebisatvis"]));  
-console.log(findLongestString(["gamarjobarussia", "yvealferikargadiqneba", "sheshaaarissashasi", "sheshasashasia"])); 
+console.log(findLongestString(["gamarjoba", "luka", "zura", "gamaindustriconalebisatvis"]));
+console.log(findLongestString(["gamarjobarussia", "yvealferikargadiqneba", "sheshaaarissashasi", "sheshasashasia"]));
 
 
 
 // 84
 function shiftString(str) {
     let result = '';
-  
-    for (let i = 0; i < str.length; i++) {
-      let char = str[i];
-      
-      if (char >= 'a' && char <= 'z') {
-        result += (char === 'z') ? 'a' : String.fromCharCode(char.charCodeAt(0) + 1);
-      }
-      else if (char >= 'A' && char <= 'Z') {
-        result += (char === 'Z') ? 'A' : String.fromCharCode(char.charCodeAt(0) + 1);
-      } else {
-        result += char;
-      }
-    }
-    
-    return result;
-  }
 
-  console.log(shiftString("asgiohasighqiurfmasfnsijabgug bsajbgdshu bgusbEGBSdhufuBUUSYBG!@#")); 
-  
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+
+        if (char >= 'a' && char <= 'z') {
+            result += (char === 'z') ? 'a' : String.fromCharCode(char.charCodeAt(0) + 1);
+        }
+        else if (char >= 'A' && char <= 'Z') {
+            result += (char === 'Z') ? 'A' : String.fromCharCode(char.charCodeAt(0) + 1);
+        } else {
+            result += char;
+        }
+    }
+
+    return result;
+}
+
+console.log(shiftString("asgiohasighqiurfmasfnsijabgug bsajbgdshu bgusbEGBSdhufuBUUSYBG!@#"));
+
 // 85
 function divideAndSum(arr) {
     let part1Sum = 0;
     let part2Sum = 0;
-  
+
     for (let i = 0; i < arr.length; i++) {
-      if (i % 2 === 0) {
-        part1Sum += arr[i];
-      } else {
-        part2Sum += arr[i];  
-      }
+        if (i % 2 === 0) {
+            part1Sum += arr[i];
+        } else {
+            part2Sum += arr[i];
+        }
     }
-  
-   
+
+
     return [part1Sum, part2Sum];
-  }
-  
-  const arr = [1, 2, 3, 4, 5, 6];
-  console.log(divideAndSum(arr));  
+}
+
+const arr = [1, 2, 3, 4, 5, 6];
+console.log(divideAndSum(arr));
 
 // 86
 function angleType(angle) {
     if (angle > 0 && angle < 90) {
-      return "Acute Angle";
+        return "Acute Angle";
     } else if (angle === 90) {
-      return "Right Angle"; 
+        return "Right Angle";
     } else if (angle > 90 && angle < 180) {
-      return "Obtuse Angle";  
+        return "Obtuse Angle";
     } else if (angle === 180) {
-      return "Straight Angle";
+        return "Straight Angle";
     } else if (angle > 180 && angle < 360) {
-      return "Reflex Angle";  
+        return "Reflex Angle";
     } else if (angle === 0 || angle === 360) {
-      return "Null or Full Rotation"; 
-    } 
-}  
-  console.log(angleType(45)); 
-  console.log(angleType(90));  
-  console.log(angleType(120)); 
-  console.log(angleType(180)); 
-  console.log(angleType(270)); 
+        return "Null or Full Rotation";
+    }
+}
+console.log(angleType(45));
+console.log(angleType(90));
 
-  
+
+
 // 87
 function areArraysSimilar(arr1, arr2) {
     if (arr1.length !== arr2.length) {
-      return false;  
+        return false;
     }
-  
+
     let diffIndices = [];
-  
+
     for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
-        diffIndices.push(i);
-      }
+        if (arr1[i] !== arr2[i]) {
+            diffIndices.push(i);
+        }
     }
-  
+
     if (diffIndices.length === 0) {
-      return true;
+        return true;
     }
-  
+
     if (diffIndices.length === 2) {
-      let [i, j] = diffIndices;
-      return arr1[i] === arr2[j] && arr1[j] === arr2[i];
+        let [i, j] = diffIndices;
+        return arr1[i] === arr2[j] && arr1[j] === arr2[i];
     }
-  
+
 }
-  
+
 
 
 // 88
 function areIntegersSimilar(num1, num2, divisor) {
-   
+
     const dividesBoth = (num1 % divisor === 0) && (num2 % divisor === 0);
     const dividesNeither = (num1 % divisor !== 0) && (num2 % divisor !== 0);
-  
-    return dividesBoth || dividesNeither;
-  }
-  
-  console.log(areIntegersSimilar(6, 12, 3));  
-  console.log(areIntegersSimilar(5, 7, 2));   
 
-  
+    return dividesBoth || dividesNeither;
+}
+
+console.log(areIntegersSimilar(6, 12, 3));
+console.log(areIntegersSimilar(5, 7, 2));
+
+
 
 // 89
 function checkOperator(x, y, z) {
 
     if (x + y === z) {
-      return 'Addition (+)';
+        return 'Addition (+)';
     } else if (x - y === z) {
-      return 'Subtraction (-)';
+        return 'Subtraction (-)';
     } else if (x * y === z) {
-      return 'Multiplication (*)';
+        return 'Multiplication (*)';
     } else if (y !== 0 && x / y === z) {
-      return 'Division (/)';
+        return 'Division (/)';
     } else {
-      return 'No valid operator';
+        return 'No valid operator';
     }
-  }
-  
-  console.log(checkOperator(10, 30, 300)); 
-  console.log(checkOperator(10, 30, 40)); 
-  
+}
+
+console.log(checkOperator(10, 30, 300));
+console.log(checkOperator(10, 30, 40));
+
 
 // 90
 function findKthGreatestElement(arr, k) {
     arr.sort((a, b) => b - a);
-  
+
     return arr[k - 1];
-  }
-  
-  console.log(findKthGreatestElement([10, 4, 5, 8, 7], 2));  
-  console.log(findKthGreatestElement([1, 2, 3, 4, 5], 3)); 
- 
+}
+
+console.log(findKthGreatestElement([10, 4, 5, 8, 7], 2));
+console.log(findKthGreatestElement([1, 2, 3, 4, 5], 3));
+
 
 // 91
 function maxSumOfKConsecutiveNumbers(arr, k) {
     if (k > arr.length) {
-      return null; 
+        return null;
     }
-  
+
     let maxSum = 0;
     for (let i = 0; i < k; i++) {
-      maxSum += arr[i];
+        maxSum += arr[i];
     }
-  
+
     let currentSum = maxSum;
     for (let i = k; i < arr.length; i++) {
-      currentSum += arr[i] - arr[i - k];
-      maxSum = Math.max(maxSum, currentSum);
+        currentSum += arr[i] - arr[i - k];
+        maxSum = Math.max(maxSum, currentSum);
     }
-  
+
     return maxSum;
-  }
-  
-  
-  console.log(maxSumOfKConsecutiveNumbers([1, 2, 3, 4, 5, 6], 2));
-  console.log(maxSumOfKConsecutiveNumbers([1, 2, 3, 4, 5, 6], 3)); 
-  
+}
+
+
+console.log(maxSumOfKConsecutiveNumbers([1, 2, 3, 4, 5, 6], 2));
+console.log(maxSumOfKConsecutiveNumbers([1, 2, 3, 4, 5, 6], 3));
+
 
 
 // 92
 function maxAdjacentDifference(arr) {
     if (arr.length < 2) {
-      return null;
+        return null;
     }
-  
-    let maxDiff = 0;
-  
-    for (let i = 1; i < arr.length; i++) {
-      const diff = Math.abs(arr[i] - arr[i - 1]);
-      maxDiff = Math.max(maxDiff, diff);
-    }
-  
-    return maxDiff;
-  }
-  
-  console.log(maxAdjacentDifference([1, 2, 3, 8, 9]));  
-  console.log(maxAdjacentDifference([10, 20, 15, 5, 25])); 
 
-  
+    let maxDiff = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        const diff = Math.abs(arr[i] - arr[i - 1]);
+        maxDiff = Math.max(maxDiff, diff);
+    }
+
+    return maxDiff;
+}
+
+console.log(maxAdjacentDifference([1, 2, 3, 8, 9]));
+console.log(maxAdjacentDifference([10, 20, 15, 5, 25]));
+
+
 
 
 // 93
@@ -1462,7 +1442,7 @@ function shortestPalindrome(s) {
             return s + suffix.split('').reverse().join('');
         }
     }
-    return s; 
+    return s;
 }
 
 const input = "zemotadidatomez";
@@ -1531,20 +1511,20 @@ if (canRearrange(string1, string2)) {
 
 // 100
 function hasCommonElement(arr1, arr2) {
-    let i = 0; 
+    let i = 0;
     let j = 0;
 
     while (i < arr1.length && j < arr2.length) {
         if (arr1[i] === arr2[j]) {
-            return true; 
+            return true;
         } else if (arr1[i] < arr2[j]) {
-            i++; 
+            i++;
         } else {
-            j++; 
+            j++;
         }
     }
 
-    return false; 
+    return false;
 }
 
 const array1 = [1, 3, 5, 7, 9];
@@ -1558,10 +1538,10 @@ if (hasCommonElement(array1, array2)) {
 
 // 101
 function isValidString(str) {
-    
+
     const regex = /^[A-Za-z]+$/;
     if (!regex.test(str)) {
-        return false; 
+        return false;
     }
 
     for (let i = 1; i < str.length; i++) {
@@ -1588,13 +1568,13 @@ if (isValidString(testString)) {
 // 102
 function countInversions(arr) {
     function mergeAndCount(arr, left, right) {
-        if (left === right) return 0; 
+        if (left === right) return 0;
 
         const mid = Math.floor((left + right) / 2);
         let invCount = 0;
 
-        invCount += mergeAndCount(arr, left, mid); 
-        invCount += mergeAndCount(arr, mid + 1, right); 
+        invCount += mergeAndCount(arr, left, mid);
+        invCount += mergeAndCount(arr, mid + 1, right);
         invCount += merge(arr, left, mid, right);
 
         return invCount;
@@ -1610,7 +1590,7 @@ function countInversions(arr) {
                 temp.push(arrr[i]);
                 i++;
             } else {
-                
+
                 temp.push(arrr[j]);
                 invCount += (mid - i + 1);
                 j++;
@@ -1646,15 +1626,15 @@ console.log("Number of inversions:", countInversions(arr));
 // 103
 function findMaxNumber(num) {
     let numStr = num.toString();
-    let maxNumber = -Infinity; 
-    
+    let maxNumber = -Infinity;
+
     for (let i = 0; i < numStr.length; i++) {
         let newNumStr = numStr.slice(0, i) + numStr.slice(i + 1);
-        let newNum = parseInt(newNumStr, 10); 
-        
+        let newNum = parseInt(newNumStr, 10);
+
         maxNumber = Math.max(maxNumber, newNum);
     }
-    
+
     return maxNumber;
 }
 
@@ -1663,7 +1643,7 @@ console.log("Maximum number after deleting one digit:", findMaxNumber(num));
 
 // 104
 function findClosestPair(arrr, target1) {
-    
+
     arrr.sort((a, b) => a - b);
 
     let left = 0;
@@ -1671,19 +1651,19 @@ function findClosestPair(arrr, target1) {
     let closestPair = [];
     let closestDiff = Infinity;
 
-  
+
     while (left < right) {
         const diff = Math.abs(arrr[left] - arrr[right]);
 
-       
+
         if (diff <= target1 && diff < closestDiff) {
             closestDiff = diff;
             closestPair = [arrr[left], arrr[right]];
         }
 
-       
+
         if (diff < target1) {
-            left++; 
+            left++;
         } else {
             right--;
         }
@@ -1695,7 +1675,7 @@ function findClosestPair(arrr, target1) {
 const arrrr = [1, 5, 9, 3, 12, 7];
 const target1 = 4;
 const result1 = findClosestPair(arr, target);
-console.log("The closest pair is:", result1); 
+console.log("The closest pair is:", result1);
 
 // 105
 function countReplacements(nums1) {
@@ -1744,8 +1724,8 @@ function countSortedPairs(arr) {
     return count;
 }
 
-console.log(countSortedPairs([1, 3, 2])); 
-console.log(countSortedPairs([2, 4, 16])); 
+console.log(countSortedPairs([1, 3, 2]));
+console.log(countSortedPairs([2, 4, 16]));
 
 
 // 108
@@ -1764,7 +1744,7 @@ function dotProduct(vector1, vector2) {
 
 const vector1 = [1, 2, 3];
 const vector2 = [4, 5, 6];
-console.log("Dot Product:", dotProduct(vector1, vector2)); 
+console.log("Dot Product:", dotProduct(vector1, vector2));
 
 
 
@@ -1783,7 +1763,7 @@ function isPrime(num) {
 function primeNumbersUpTo(n) {
     let primes = [];
 
-   
+
     for (let i = 2; i <= n; i++) {
         if (isPrime(i)) {
             primes.push(i);
@@ -1805,11 +1785,11 @@ function countEvenBeforeNumber(sequence, targeted) {
 
     for (let i = 0; i < sequence.length; i++) {
         if (sequence[i] === targeted) {
-            break; 
+            break;
         }
 
         if (sequence[i] % 2 === 0) {
-            count++; 
+            count++;
         }
     }
 
@@ -1827,13 +1807,13 @@ function findThirdNumber(num1, num2, num3) {
     if (num1 === num2) {
         return num3;
     } else if (num1 === num3) {
-        return num2; 
+        return num2;
     } else {
         return num1;
     }
 }
 
-console.log(findThirdNumber(5, 5, 3)); 
+console.log(findThirdNumber(5, 5, 3));
 console.log(findThirdNumber(8, 6, 8));
 
 
@@ -1841,17 +1821,17 @@ console.log(findThirdNumber(8, 6, 8));
 // 112
 function countTrailingZeros(n) {
     let count = 0;
-   
+
     while (n >= 5) {
         n = Math.floor(n / 5);
-        count += n; 
+        count += n;
     }
-    
+
     return count;
 }
 
 console.log(countTrailingZeros(100));
-console.log(countTrailingZeros(25)); 
+console.log(countTrailingZeros(25));
 
 
 // 113
@@ -1861,7 +1841,7 @@ function calculateSum(n) {
 
     while (currentTerm > 0) {
         sum += currentTerm;
-        currentTerm = Math.floor(currentTerm / 2); 
+        currentTerm = Math.floor(currentTerm / 2);
     }
 
     return sum;
@@ -1879,7 +1859,7 @@ function isCorrectSentence(sentence) {
 }
 
 console.log(isCorrectSentence("This is a correct sentence."));
-console.log(isCorrectSentence("this is not correct."));   
+console.log(isCorrectSentence("this is not correct."));
 
 // 115
 function isDiagonalMatrix(matrix) {
@@ -1887,7 +1867,7 @@ function isDiagonalMatrix(matrix) {
         for (let j = 0; j < matrix[i].length; j++) {
 
             if (i !== j && matrix[i][j] !== 0) {
-                return false; 
+                return false;
             }
         }
     }
@@ -1899,33 +1879,33 @@ const matrix1 = [
     [0, 2, 0],
     [0, 0, 3]
 ];
-console.log(isDiagonalMatrix(matrix1)); 
+console.log(isDiagonalMatrix(matrix1));
 
 const matrix2 = [
     [1, 0, 0],
     [0, 2, 3],
     [0, 0, 3]
 ];
-console.log(isDiagonalMatrix(matrix2)); 
+console.log(isDiagonalMatrix(matrix2));
 
 // 116
 function findDivisibleByThreeOptions(str) {
     const results = [];
-    const hashIndex = str.indexOf('#'); 
-    
+    const hashIndex = str.indexOf('#');
+
     for (let digit = 0; digit <= 9; digit++) {
         let replacedStr = str.substring(0, hashIndex) + digit + str.substring(hashIndex + 1);
-        
+
         let sum = 0;
         for (let char of replacedStr) {
             sum += parseInt(char);
         }
-        
+
         if (sum % 3 === 0) {
-            results.push(replacedStr);  
+            results.push(replacedStr);
         }
     }
-    
+
     return results;
 }
 
@@ -1934,7 +1914,7 @@ console.log(findDivisibleByThreeOptions("2#0"));
 // 117
 function isIdentityMatrix(matrix) {
     const n = matrix.length;
-    
+
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < n; j++) {
             if (i === j) {
@@ -1952,54 +1932,54 @@ function isIdentityMatrix(matrix) {
 }
 
 
-console.log(isIdentityMatrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])); 
-console.log(isIdentityMatrix([[1, 0, 0], [0, 1, 0], [1, 0, 1]])); 
+console.log(isIdentityMatrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]]));
+console.log(isIdentityMatrix([[1, 0, 0], [0, 1, 0], [1, 0, 1]]));
 
 // 118
-function isInRange(number, lowerBound, upperBound) {
-  
+function isInRange29(number, lowerBound, upperBound) {
+
     return number >= lowerBound && number <= upperBound;
 }
 
-console.log(isInRange(5, 1, 10)); 
-console.log(isInRange(15, 1, 10)); 
+console.log(isInRange29(5, 1, 10));
+console.log(isInRange29(15, 1, 10));
 
 
 // 119
 function hasIncreasingSequence(number) {
-  
+
     const numStr = number.toString();
-    
-    
+
+
     for (let i = 1; i < numStr.length; i++) {
         if (numStr[i] <= numStr[i - 1]) {
-            return false; 
+            return false;
         }
     }
-    
-    return true;  
+
+    return true;
 }
 
-console.log(hasIncreasingSequence(1234)); 
-console.log(hasIncreasingSequence(4321)); 
+console.log(hasIncreasingSequence(1234));
+console.log(hasIncreasingSequence(4321));
 
 
 // 120
 function isPointInsideCircle(x, y, r, a, b) {
-   
+
     const distanceSquared = (a - x) ** 2 + (b - y) ** 2;
-    
+
 
     return distanceSquared < r ** 2;
 }
 
-console.log(isPointInsideCircle(0, 0, 5, 2, 3)); 
-console.log(isPointInsideCircle(0, 0, 5, 5, 5)); 
+console.log(isPointInsideCircle(0, 0, 5, 2, 3));
+console.log(isPointInsideCircle(0, 0, 5, 5, 5));
 
 // 121
 function isLowerTriangular(matrix) {
-    const n = matrix.length; 
-    
+    const n = matrix.length;
+
     for (let i = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
             if (matrix[i][j] !== 0) {
@@ -2007,7 +1987,7 @@ function isLowerTriangular(matrix) {
             }
         }
     }
-    
+
     return true;
 }
 
@@ -2016,14 +1996,14 @@ const matrix3 = [
     [2, 3, 0],
     [4, 5, 6]
 ];
-console.log(isLowerTriangular(matrix3)); 
+console.log(isLowerTriangular(matrix3));
 
 const matrix4 = [
     [1, 2, 0],
     [0, 3, 4],
     [0, 0, 5]
 ];
-console.log(isLowerTriangular(matrix4)); 
+console.log(isLowerTriangular(matrix4));
 
 
 // 122
@@ -2033,10 +2013,10 @@ function checkSequence(arr) {
 
     for (let i = 0; i < arr.length - 1; i++) {
         if (arr[i] >= arr[i + 1]) {
-            isIncreasing = false; 
+            isIncreasing = false;
         }
         if (arr[i] <= arr[i + 1]) {
-            isDecreasing = false; 
+            isDecreasing = false;
         }
     }
 
@@ -2049,8 +2029,8 @@ function checkSequence(arr) {
     }
 }
 
-console.log(checkSequence([1, 2, 3, 4, 5])); 
-console.log(checkSequence([5, 4, 3, 2, 1])); 
+console.log(checkSequence([1, 2, 3, 4, 5]));
+console.log(checkSequence([5, 4, 3, 2, 1]));
 
 // 123
 function isPermutation(arr, n) {
@@ -2061,18 +2041,18 @@ function isPermutation(arr, n) {
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] < 1 || arr[i] > n) {
-            return false; 
+            return false;
         }
         numSet.add(arr[i]);
     }
 
-   
+
     return numSet.size === n;
 }
 
-console.log(isPermutation([1, 2, 3], 3)); 
-console.log(isPermutation([3, 1, 2], 3)); 
-console.log(isPermutation([1, 2, 2], 3)); 
+console.log(isPermutation([1, 2, 3], 3));
+console.log(isPermutation([3, 1, 2], 3));
+console.log(isPermutation([1, 2, 2], 3));
 
 
 
@@ -2081,8 +2061,8 @@ function logical_Nor(x, y) {
     return !(x || y);
 }
 
-console.log(logical_Nor(true, false)); 
-console.log(logical_Nor(false, false)); 
+console.log(logical_Nor(true, false));
+console.log(logical_Nor(false, false));
 
 
 
@@ -2097,21 +2077,21 @@ function findlongeststring(arr5) {
         }
     }
 }
-console.log(findLongestString(["proximakentavri", "diditavi", "paataradatvi", "varskvlavi"]));    
+console.log(findLongestString(["proximakentavri", "diditavi", "paataradatvi", "varskvlavi"]));
 
 // 126
 function largestEvenNumber(arr) {
-    let largestEven = null; 
+    let largestEven = null;
 
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0) { 
+        if (arr[i] % 2 === 0) {
             if (largestEven === null || arr[i] > largestEven) {
-                largestEven = arr[i]; 
+                largestEven = arr[i];
             }
         }
     }
 
-    return largestEven; 
+    return largestEven;
 }
 
 console.log(largestEvenNumber([1, 3, 7, 10, 4, 6]));
@@ -2124,16 +2104,16 @@ function reverseBits(n) {
 
     for (let i = 0; i < bitCount; i++) {
         reversed <<= 1;
-        
+
         reversed |= (n & 1);
-        
+
         n >>= 1;
     }
-    
-    return reversed >>> 0; 
+
+    return reversed >>> 0;
 }
 
-console.log(reverseBits(14));  
+console.log(reverseBits(14));
 
 
 
@@ -2146,22 +2126,22 @@ function findSmallestRoundNumber(value) {
     return Math.ceil(value / 10) * 10;
 }
 
-console.log(findSmallestRoundNumber(590)); 
-console.log(findSmallestRoundNumber(592));  
+console.log(findSmallestRoundNumber(590));
+console.log(findSmallestRoundNumber(592));
 
 
 
 // 129
 function isPrime(num) {
-    if (num <= 1) return false; 
+    if (num <= 1) return false;
     for (let i = 2; i * i <= num; i++) {
-        if (num % i === 0) return false; 
+        if (num % i === 0) return false;
     }
     return true;
 }
 
 function findSmallestPrimeGreaterThan(n) {
-    let number = n + 1; 
+    let number = n + 1;
 
     while (!isPrime(number)) {
         number++;
@@ -2177,33 +2157,33 @@ console.log(findSmallestPrimeGreaterThan(10));
 function countEvenDigits(n) {
     let numStr = Math.abs(n).toString();
     let count = 0;
-    
+
     for (let i = 0; i < numStr.length; i++) {
         if (parseInt(numStr[i]) % 2 === 0) {
             count++;
         }
     }
-    
+
     return count;
 }
 
-console.log(countEvenDigits(123456)); 
+console.log(countEvenDigits(123456));
 
 //131
 function prefixSum(arr) {
     let result = [];
     let sum = 0;
-    
- 
+
+
     for (let i = 0; i < arr.length; i++) {
-        sum += arr[i]; 
-        result.push(sum); 
+        sum += arr[i];
+        result.push(sum);
     }
-    
+
     return result;
 }
 
-console.log(prefixSum([1, 2, 3, 4]));  
+console.log(prefixSum([1, 2, 3, 4]));
 
 //132
 function findPrimeFactors(num) {
@@ -2224,7 +2204,7 @@ function findPrimeFactors(num) {
         factors.add(num);
     }
 
-    return Array.from(factors); 
+    return Array.from(factors);
 
 }
 //133
@@ -2232,7 +2212,7 @@ function isProperFraction(numerator, denominator) {
     if (numerator > 0 && denominator > 0) {
         return numerator < denominator;
     } else {
-      
+
         return false;
     }
 }
@@ -2246,7 +2226,7 @@ function transformString(str) {
 
     for (let i = 0; i < str.length; i++) {
         let char = str[i];
-        
+
         if (char >= 'a' && char <= 'z') {
             let newChar = String.fromCharCode(219 - char.charCodeAt(0));
             transformed += newChar;
@@ -2258,7 +2238,7 @@ function transformString(str) {
     return transformed;
 }
 
-console.log(transformString("abgdebztikmnobjrst")); 
+console.log(transformString("abgdebztikmnobjrst"));
 
 
 
@@ -2281,14 +2261,14 @@ function removeDuplicateChars(str) {
     return result;
 }
 
-console.log(removeDuplicateChars("hardiwouldsay")); 
+console.log(removeDuplicateChars("hardiwouldsay"));
 
 //136
 function replaceFirstDigit(str) {
     return str.replace(/\d/, '$');
 }
 
-console.log(replaceFirstDigit("trump123")); 
+console.log(replaceFirstDigit("trump123"));
 
 
 //137
@@ -2296,7 +2276,7 @@ function checkNumber(num) {
     return num > 15 ? num : 15;
 }
 
-console.log(checkNumber(20)); 
+console.log(checkNumber(20));
 
 
 //138
@@ -2305,13 +2285,13 @@ function reverseBits(num) {
     for (let i = 0; i < 16; i++) {
         reversed <<= 1;
         reversed |= (num & 1);
-     
+
         num >>= 1;
     }
     return reversed;
 }
 
-console.log(reverseBits(0b0000000000001010)); 
+console.log(reverseBits(0b0000000000001010));
 
 
 
@@ -2319,30 +2299,30 @@ console.log(reverseBits(0b0000000000001010));
 function findRightmostRoundNumber(arr) {
     for (let i = arr.length - 1; i >= 0; i--) {
         if (arr[i] % 10 === 0) {
-            return i + 1; 
+            return i + 1;
         }
     }
-    return 0; 
+    return 0;
 }
-console.log(findRightmostRoundNumber([123, 456, 780, 910, 200])); 
+console.log(findRightmostRoundNumber([123, 456, 780, 910, 200]));
 
 
 
 // 140
 function areAllDigitsSame(num) {
     const numStr = num.toString();
-    
+
     for (let i = 1; i < numStr.length; i++) {
         if (numStr[i] !== numStr[0]) {
             return false;
         }
     }
-    
-    return true; 
+
+    return true;
 }
 
 console.log(areAllDigitsSame(11111));
-console.log(areAllDigitsSame(12345)); 
+console.log(areAllDigitsSame(12345));
 
 
 
@@ -2358,8 +2338,8 @@ const array8 = [1, 2, 3, 4];
 const array9 = ['a', 'b', 'c', 'd', 'e'];
 
 const results1 = findArrayLengths(array8, array9);
-console.log(`Array 1 length: ${result.array8Length}`);  
-console.log(`Array 2 length: ${result.array9Length}`); 
+console.log(`Array 1 length: ${result.array8Length}`);
+console.log(`Array 2 length: ${result.array9Length}`);
 
 
 // 142
@@ -2382,7 +2362,7 @@ function simplifyPath(path) {
 
     return '/' + stack.join('/');
 }
-console.log(simplifyPath("/home//foo/"));    
+console.log(simplifyPath("/home//foo/"));
 
 
 // 143
@@ -2421,7 +2401,7 @@ function findMaxN(x) {
 
     return n;
 }
-console.log(findMaxN(10));  
+console.log(findMaxN(10));
 
 // 146
 function sumOfCubes(n) {
@@ -2432,25 +2412,25 @@ function sumOfCubes(n) {
     return sum;
 }
 
-console.log(sumOfCubes(3)); 
+console.log(sumOfCubes(3));
 
 
 
 // 147
 function sumOfDigitsInString(str) {
     let sum = 0;
-    
+
     for (let i = 0; i < str.length; i++) {
-   
+
         if (/\d/.test(str[i])) {
-            sum += parseInt(str[i], 10); 
+            sum += parseInt(str[i], 10);
         }
     }
-    
+
     return sum;
 }
 
-console.log(sumOfDigitsInString("abc121233")); 
+console.log(sumOfDigitsInString("abc121233"));
 
 
 
@@ -2458,7 +2438,7 @@ console.log(sumOfDigitsInString("abc121233"));
 function swapArrayHalves(arr) {
     if (arr.length % 2 !== 0) {
         console.log("Array length must be even.");
-        return arr; 
+        return arr;
     }
 
     let mid = arr.length / 2;
@@ -2476,42 +2456,42 @@ console.log(swapArrayHalves([1, 2, 3, 4]));
 // 149
 function toggleCase(str) {
     let result = '';
-    
+
     for (let i = 0; i < str.length; i++) {
         let char = str[i];
-        
+
         if (char === char.toUpperCase()) {
             result += char.toLowerCase();
-        } 
+        }
         else {
             result += char.toUpperCase();
         }
     }
-    
+
     return result;
 }
 
-console.log(toggleCase("earthisgreat"));  
-console.log(toggleCase("makeamericagreatagain"));  
+console.log(toggleCase("earthisgreat"));
+console.log(toggleCase("makeamericagreatagain"));
 console.log(toggleCase("systemofdown"));
 
 
 // 150
 function swapAdjacentDigits(nums20) {
     let numStr = nums20.toString();
-    
+
     if (numStr.length % 2 !== 0) {
         console.log("The number must have an even number of digits.");
         return;
     }
-    
+
     let swappedStr = "";
-    
+
 
     for (let i = 0; i < numStr.length; i += 2) {
         swappedStr += numStr[i + 1] + numStr[i];
     }
-    
+
     return parseInt(swappedStr);
 }
 
