@@ -1218,36 +1218,11 @@ function angleType(angle) {
 }
 console.log(angleType(45));
 console.log(angleType(90));
-console.log(angleType(120));
-console.log(angleType(180));
-console.log(angleType(270));
+
 
 
 // 87
-function areArraysSimilar(arr1, arr2) {
-    if (arr1.length !== arr2.length) {
-        return false;
-    }
-
-    let diffIndices = [];
-
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr1[i] !== arr2[i]) {
-            diffIndices.push(i);
-        }
-    }
-
-    if (diffIndices.length === 0) {
-        return true;
-    }
-
-    if (diffIndices.length === 2) {
-        let [i, j] = diffIndices;
-        return arr1[i] === arr2[j] && arr1[j] === arr2[i];
-    }
-
-}
-
+// /.................
 
 
 // 88
@@ -1373,14 +1348,10 @@ function findMostFrequentNumber(arrfrequent) {
     let mostFrequentNum = null;
 
     for (const num of arrfrequent) {
-        frequencyMap[num] = (frequencyMap[num] || 0) + 1;
-
         if (frequencyMap[num] > maxCount) {
             maxCount = frequencyMap[num];
-            mostFrequentNum = num;
         }
     }
-
     return mostFrequentNum;
 }
 
@@ -1398,7 +1369,7 @@ const arrre = [1, 2, 3, 4, 2, 5, 2];
 const target = 2;
 const replacement = 9;
 
-const updatedArray = replaceNumber(arr, target, replacement);
+const updatedArray = replaceNumber(arrre, target, replacement);
 console.log("Updated array:", updatedArray);
 
 
@@ -1419,7 +1390,7 @@ function sumOfAbsoluteDifferences(ar) {
 }
 
 const ar = [2, 4, 6, 8, 10];
-const results = sumOfAbsoluteDifferences(arr);
+const results = sumOfAbsoluteDifferences(ar);
 console.log("Sum of absolute differences:", results);
 
 
@@ -1557,16 +1528,16 @@ if (isValidString(testString)) {
 
 
 // 102
-function countInversions(arr) {
-    function mergeAndCount(arr, left, right) {
+function countInversions(arrr) {
+    function mergeAndCount(arrr, left, right) {
         if (left === right) return 0;
 
         const mid = Math.floor((left + right) / 2);
         let invCount = 0;
 
-        invCount += mergeAndCount(arr, left, mid);
-        invCount += mergeAndCount(arr, mid + 1, right);
-        invCount += merge(arr, left, mid, right);
+        invCount += mergeAndCount(arrr, left, mid);
+        invCount += mergeAndCount(arrr, mid + 1, right);
+        invCount += merge(arrr, left, mid, right);
 
         return invCount;
     }
@@ -1610,7 +1581,7 @@ function countInversions(arr) {
 
 
 const arrr = [2, 3, 8, 6, 1];
-console.log("Number of inversions:", countInversions(arr));
+console.log("Number of inversions:", countInversions(arrr));
 
 
 
@@ -1665,7 +1636,7 @@ function findClosestPair(arrr, target1) {
 
 const arrrr = [1, 5, 9, 3, 12, 7];
 const target1 = 4;
-const result1 = findClosestPair(arr, target);
+const result1 = findClosestPair(arrrr, target1);
 console.log("The closest pair is:", result1);
 
 // 105
@@ -1803,7 +1774,6 @@ function findThirdNumber(num1, num2, num3) {
         return num1;
     }
 }
-
 console.log(findThirdNumber(5, 5, 3));
 console.log(findThirdNumber(8, 6, 8));
 
@@ -1812,15 +1782,12 @@ console.log(findThirdNumber(8, 6, 8));
 // 112
 function countTrailingZeros(n) {
     let count = 0;
-
     while (n >= 5) {
         n = Math.floor(n / 5);
         count += n;
     }
-
     return count;
 }
-
 console.log(countTrailingZeros(100));
 console.log(countTrailingZeros(25));
 
@@ -1834,10 +1801,8 @@ function calculateSum(n) {
         sum += currentTerm;
         currentTerm = Math.floor(currentTerm / 2);
     }
-
     return sum;
 }
-
 console.log(calculateSum(10));
 console.log(calculateSum(100))
 
@@ -2059,8 +2024,6 @@ console.log(logical_Nor(false, false));
 
 // 125
 function findlongeststring(arr5) {
-    let longest = "";
-
     for (let i = 0; i < arr5.length; i++) {
 
         if (arr5[i].length > longest.length) {
@@ -2134,7 +2097,7 @@ function isPrime(num) {
 function findSmallestPrimeGreaterThan(n) {
     let number = n + 1;
 
-    while (!isPrime(number)) {
+    while ((number)) {
         number++;
     }
 
@@ -2310,8 +2273,8 @@ function findArrayLengths(arr28, arr29) {
 const array8 = [1, 2, 3, 4];
 const array9 = ['a', 'b', 'c', 'd', 'e'];
 
-console.log(`Array 1 length: ${result.array8Length}`);
-console.log(`Array 2 length: ${result.array9Length}`);
+console.log(`Array 1 length: ${result.array8}`);
+console.log(`Array 2 length: ${result.array9}`);
 
 
 // 142
