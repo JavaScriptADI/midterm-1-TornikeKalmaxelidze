@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        <h1>page print</h1>
+        <p>task 2 print currect web</p>
+        <button onclick="printPage()">Print this Page</button>
+    
+
+
+
+
+        <script>
+            function printPage() {
+                window.print(); 
+            }
+        </script>
+
+    <title>Multiplication and Division Calculator</title>
+    <script>
+        function calculate() {
+
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+ 
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+
+            let multiplication = num1 * num2;
+            let division = (num2 !== 0) ? num1 / num2 : "Cannot divide by zero";
+
+            document.getElementById("resultMultiplication").innerHTML = "Multiplication: " + multiplication;
+            document.getElementById("resultDivision").innerHTML = "Division: " + division;
+        }
+    </script>
+
+    <h1>Multiplication and Division Calculator</h1>
+    
+    <form onsubmit="event.preventDefault(); calculate();">
+        <label for="num1">Enter first number:</label>
+        <input type="number" id="num1" required><br><br>
+        
+        <label for="num2">Enter second number:</label>
+        <input type="number" id="num2" required><br><br>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <h3>Results:</h3>
+    <p id="resultMultiplication"></p>
+    <p id="resultDivision"></p>
+
+
+    <title>Temperature Converter</title>
+    <script>
+        
+        function celsiusToFahrenheit(celsius) {
+            return (celsius * 9/5) + 32;
+        }
+
+        function fahrenheitToCelsius(fahrenheit) {
+            return (fahrenheit - 32) * 5/9;
+        }
+
+        function convertTemperature() {
+            let celsius = parseFloat(document.getElementById("celsius").value);
+            let fahrenheit = parseFloat(document.getElementById("fahrenheit").value);
+
+            if (!isNaN(celsius)) {
+                let convertedFahrenheit = celsiusToFahrenheit(celsius);
+                document.getElementById("resultCelsiusToFahrenheit").innerHTML = `${celsius}°C is ${convertedFahrenheit}°F`;
+            }
+
+            if (!isNaN(fahrenheit)) {
+                let convertedCelsius = fahrenheitToCelsius(fahrenheit);
+                document.getElementById("resultFahrenheitToCelsius").innerHTML = `${fahrenheit}°F is ${convertedCelsius}°C`;
+            }
+        }
+    </script>
+     <h1>Temperature Converter</h1>
+    
+     <label for="celsius">Enter temperature in Celsius:</label>
+     <input type="number" id="celsius"><br><br>
+ 
+     <label for="fahrenheit">Enter temperature in Fahrenheit:</label>
+     <input type="number" id="fahrenheit"><br><br>
+ 
+     <button onclick="convertTemperature()">Convert</button>
+ 
+     <h3>Results:</h3>
+     <p id="resultCelsiusToFahrenheit"></p>
+     <p id="resultFahrenheitToCelsius"></p>
+ 
+     <title>Get Website URL</title>
+     <script>
+         function displayURL() {
+            
+             let currentURL = window.location.href;
+             document.getElementById("urlDisplay").innerText = "Current website URL: " + currentURL;
+         }
+     </script>
+ 
+ 
+     <h1>Get the Website URL</h1>
+     
+     <button onclick="displayURL()">Get Current URL</button>
+ 
+     <p id="urlDisplay"></p>
+
+
+
+
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>
