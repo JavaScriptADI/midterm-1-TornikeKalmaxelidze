@@ -997,18 +997,7 @@ function integratsarry(arr) {
 console.log(integratsarry([1, 2, 3]));
 
 // 74
-function firstandlastelementvalue(arr) {
-    if (arr.length > 0) {
-        let largest = Math.max(arr[0], arr[arr.length - 1]);
-        for (let i = 0; i < arr.length; i++);
-        arr[i] = largest
-        return arr
-    } else {
-        return "Array must contain at least one element.";
-    }
-}
-console.log(firstandlastelementvalue([20, 25, 30]));
-
+// warmodgena ar aris
 // 75
 function firstandlastelementsequal(arr) {
     if (arr.length >= 1) {
@@ -1229,7 +1218,9 @@ function angleType(angle) {
 }
 console.log(angleType(45));
 console.log(angleType(90));
-
+console.log(angleType(120));
+console.log(angleType(180));
+console.log(angleType(270));
 
 
 // 87
@@ -2186,27 +2177,9 @@ function prefixSum(arr) {
 console.log(prefixSum([1, 2, 3, 4]));
 
 //132
-function findPrimeFactors(num) {
+//  rtulia
 
-    while (num % 2 === 0) {
-        factors.add(2);
-        num /= 2;
-    }
 
-    for (let i = 3; i * i <= num; i += 2) {
-        while (num % i === 0) {
-            factors.add(i);
-            num /= i;
-        }
-    }
-
-    if (num > 2) {
-        factors.add(num);
-    }
-
-    return Array.from(factors);
-
-}
 //133
 function isProperFraction(numerator, denominator) {
     if (numerator > 0 && denominator > 0) {
@@ -2280,7 +2253,7 @@ console.log(checkNumber(20));
 
 
 //138
-function reverseBits(num) {
+function reverseBites(num) {
     let reversed = 0;
     for (let i = 0; i < 16; i++) {
         reversed <<= 1;
@@ -2291,7 +2264,7 @@ function reverseBits(num) {
     return reversed;
 }
 
-console.log(reverseBits(0b0000000000001010));
+console.log(reverseBites(0b0000000000001010));
 
 
 
@@ -2337,7 +2310,6 @@ function findArrayLengths(arr28, arr29) {
 const array8 = [1, 2, 3, 4];
 const array9 = ['a', 'b', 'c', 'd', 'e'];
 
-const results1 = findArrayLengths(array8, array9);
 console.log(`Array 1 length: ${result.array8Length}`);
 console.log(`Array 2 length: ${result.array9Length}`);
 
@@ -2375,19 +2347,7 @@ console.log(sortByLength(["bubuka", "koshka", "spilo", "iadoni", "bear"]));
 
 
 // 144
-function breakURL(url) {
-    const regex = /^(https?|ftp):\/\/([^\/]+)(\/)?$/;
-    const match = url.match(regex);
-
-    if (match) {
-        return [match[1], match[2], match[3] || ''];
-    } else {
-        return [];
-    }
-}
-
-console.log(breakURL("https://example.org"));
-
+// warmddgena ar makvs
 
 // 145
 function findMaxN(x) {
