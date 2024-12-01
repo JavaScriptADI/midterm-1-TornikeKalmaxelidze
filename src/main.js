@@ -274,7 +274,7 @@ console.log(removeCharAtPosition("kotlin", 0));
 console.log(removeCharAtPosition("Testofyoga", 5));
 
 //   task 23 
-function swapFirstAndLast(str) {
+function swapFirstAndLastsecendtime(str) {
     if (str.length >= 1) {
         if (str.length === 1) {
             return str;
@@ -284,9 +284,9 @@ function swapFirstAndLast(str) {
     return "String length must be at least 1.";
 }
 
-console.log(swapFirstAndLast("zuramela"));
-console.log(swapFirstAndLast("zuracha"));
-console.log(swapFirstAndLast("zura"));
+console.log(swapFirstAndLastsecendtime("zuramela"));
+console.log(swapFirstAndLastsecendtime("zuracha"));
+console.log(swapFirstAndLastsecendtime("zura"));
 
 // task 24 
 function addFirstCharToFrontAndBack(str) {
@@ -320,7 +320,7 @@ console.log(isMultipleOf3Or7(9));
 
 
 //   task 26    
-function modifyString(str) {
+function modifyString123(str) {
     if (str.length >= 3) {
         const lastThree = str.slice(-3);
         return lastThree + str + lastThree;
@@ -328,7 +328,7 @@ function modifyString(str) {
     return "String length must be 3 or more.";
 }
 
-console.log(modifyString("hello"));
+console.log(modifyString123("hello"));
 
 
 //   task 27 
@@ -472,7 +472,7 @@ const num12 = 93;
 console.log(checkLastDigit(num10, num11, num12));
 
 // 37
-function modifyString(str) {
+function modifyString123(str) {
     if (str.length < 3) {
         return str.toUpperCase();
     } else {
@@ -481,10 +481,10 @@ function modifyString(str) {
 }
 
 const inputedString1 = "HelloWorld";
-console.log(modifyString(inputedString1));
+console.log(modifyString123(inputedString1));
 
 const shortString = "Hi";
-console.log(modifyString(shortString));
+console.log(modifyString123(shortString));
 
 // 38
 
@@ -708,7 +708,7 @@ console.log(convertToHoursAndMinutes(125));
 function convertalfabeticalsort(str) {
     return str.split("").reverse().join("");
 }
-console.log(convertalfabeticalsort("zurachka"))
+console.log(convertalfabeticalsort("zurachka"));
 
 // 53 
 function checkABSeparation(str) {
@@ -978,11 +978,11 @@ function firstandlast(arr) {
             return true;
         } else {
             return false
-        }
+        };
     } else {
-        return "arry aris swori da 3 element"
+        return "arry aris swori da 3 element";
     }
-}
+};
 console.log(firstandlast([1, 2, 1]));
 
 // 73
@@ -991,7 +991,7 @@ function integratsarry(arr) {
         return arr.reverse();
 
     } else {
-        return "zustad toli aris 3 elementis"
+        return "zustad toli aris 3 elementis";
     }
 };
 console.log(integratsarry([1, 2, 3]));
@@ -1003,7 +1003,7 @@ function firstandlastelementsequal(arr) {
     if (arr.length >= 1) {
         return [arr[0], arr[arr.length - 1]];
     } else {
-        return " rac shen gidna is damiwere"
+        return " rac shen gidna is damiwere";
     }
 
 }
@@ -1067,7 +1067,7 @@ console.log(contains30And40Twice([40, 40]));
 
 
 // 80
-function swapFirstAndLast(arr) {
+function swapFirstAndLastsecendtime(arr) {
     if (arr.length >= 1) {
         if (arr.length === 1) {
             return arr;
@@ -1082,8 +1082,8 @@ function swapFirstAndLast(arr) {
         return "Array must contain at least 1 element.";
     }
 }
-console.log(swapFirstAndLast([6, 2, 7]));
-console.log(swapFirstAndLast([5, 10, 15]));
+console.log(swapFirstAndLastsecendtime([6, 2, 7]));
+console.log(swapFirstAndLastsecendtime([5, 10, 15]));
 
 // 81
 function addTwoDigits(num) {
@@ -1332,7 +1332,7 @@ function findMaxDifference(arry) {
 }
 
 const Array = [10, 2, 9, 1, 5];
-const maxDifference = findMaxDifference(arr);
+const maxDifference = findMaxDifference(Array);
 console.log("Maximum difference:", maxDifference);
 
 
@@ -1356,8 +1356,8 @@ function findMostFrequentNumber(arrfrequent) {
 }
 
 const arrfrequent = [1, 3, 2, 3, 4, 1, 3, 1];
-const mostFrequentNumber = findMostFrequentNumber(arr);
-console.log("Most frequent number:", mostFrequentNumber);
+const mostFrequentNumber = findMostFrequentNumber(arrfrequent);
+console.log("Most frequent number:", arrfrequent);
 
 
 // 95
