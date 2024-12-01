@@ -1992,9 +1992,6 @@ console.log(checkSequence([5, 4, 3, 2, 1]));
 function isPermutation(arr, n) {
     if (arr.length !== n) {
     }
-
-    const numSet = new Set();
-
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] < 1 || arr[i] > n) {
             return false;
@@ -2013,12 +2010,7 @@ console.log(isPermutation([1, 2, 2], 3));
 
 
 // 124
-function logical_Nor(x, y) {
-    return !(x || y);
-}
-
-console.log(logical_Nor(true, false));
-console.log(logical_Nor(false, false));
+//...........................
 
 
 
@@ -2086,7 +2078,7 @@ console.log(findSmallestRoundNumber(592));
 
 
 // 129
-function isPrime(num) {
+function isPrime1(num) {
     if (num <= 1) return false;
     for (let i = 2; i * i <= num; i++) {
         if (num % i === 0) return false;
@@ -2263,18 +2255,6 @@ console.log(areAllDigitsSame(12345));
 
 
 // 141
-function findArrayLengths(arr28, arr29) {
-    return {
-        array8Length: arr28.length,
-        array9Length: arr29.length
-    };
-}
-
-const array8 = [1, 2, 3, 4];
-const array9 = ['a', 'b', 'c', 'd', 'e'];
-
-console.log(`Array 1 length: ${array8}`);
-console.log(`Array 2 length: ${array9}`);
 
 
 // 142
